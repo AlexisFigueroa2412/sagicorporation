@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>S A G I ...</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, maximum-scale = 1, initial-scale= 1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/sagi.css">
+	<link rel="icon" href="multimedia/Edificio.ico">	
+</head>
+<body data-spy="scroll" data-target="#cabal">
+	<section>
+		<div class="text-center">
+			<p class="text display-4">Cargando... | Loading... | Laden...</p>
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>				
+			</div>
+			
+		</div>
+	</section>
+</body>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		var idioma = navigator.language || navigator.userLanguage;
+		alert ("The language is: "+ idioma);
+	</script>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var ln = x=window.navigator.language||navigator.browserLanguage || navigator.userLanguage ;
+			if(ln == 'eng'){
+			window.location.href = 'html/english.html';//si esta en inglés va a english
+			}else if(ln == 'DE'){
+			window.location.href = 'html/deutsche.html'; // si es alemán va a deutsche
+			}else{
+			window.location.href = 'html/español.html'; // si no es ninguna de los dos va a español
+			}
+		}
+	</script>
+</html>
